@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-        <div id="border" class="green"></div>
+        <div id="green_border"></div>
         <nav>
             <a href="#about_me">About Me</a>
             <a href="#resume">Resume</a>
@@ -34,96 +34,151 @@
                 </div>
 
         </section>
-        <section class="name_section">
+        <div class="name_section">
             <h2>Margaret</h2>
             <h2>Jean</h2>
             <h2>Johnson</h2>
-        </section>
+        </div>
+
         <section class="about_section">
-
-
-            <!--
             <h2 id="about_me">About Me</h2>
-            <div class="about_content">
-                <div class="img_content">
-                    <img src="images/maggie.png" alt="a girl wearing blue headphones on a laptop">
-                </div>
-
-                <div class="text">
-                    <p>I am an aspiring full stack developer with a strong interest in web development and design. I enjoy building applications that are both functional and visually engaging, and I like working across both the front end and back end to bring ideas to life.</p>
-                    <br>
-                    <p>I am always looking to learn new technologies, improve my skills, and take on projects that challenge me to grow as a developer. I value creativity, problem solving, and building things that people can actually use and enjoy.</p>
-                </div>-->
-            
+            <img src="images/maggie.png" alt="a girl wearing blue headphones on a laptop">
+            <p>I am an aspiring full stack developer with a strong interest in web development and design. I enjoy building applications that are both functional and visually engaging, and I like working across both the front end and back end to bring ideas to life.</p>
+            <br>
+            <p>I am always looking to learn new technologies, improve my skills, and take on projects that challenge me to grow as a developer. I value creativity, problem solving, and building things that people can actually use and enjoy.</p>
         </section>
         
-        <div id="border">Portfolio</div>
+        <div class="wrapper">
+            <div class="space"></div>
+            <div id="border"></div>
+        </div>
 
         <section class="resume_section">
             <h2 id="resume">Resume</h2>
              
             <div class="resume_container">
                 <h3>Education</h3>
+                <p style="margin-bottom: 0px">Eau Claire, WI, Expected Spring of 2026</p>
+                <p><strong>University of Wisconsin Eau Claire -</strong> Bachelor of Science in Computer Science</p>
+                <br>
+                <p style="margin-bottom: 0px">Rice Lake WI, August 2024</p>
+                <p><strong>University of Wisconsin Eau Claire -</strong>Barron County - Associate of Arts and Science</p>
             </div>
 
             <div class="resume_container">
                 <h3>Skills</h3>
+                <div class="list_split">
+                    <ul>
+                        <li>Full stack web development using HTML, CSS, JavaScript, PHP, and MySQL</li>
+                        <li>Basic backend development with Node.js (server setup, routing, and ports)</li>
+                        <li>Designing responsive and user friendly web interfaces</li>
+                        <li>Developing dynamic features and interactive user experiences</li>
+                        <li>Version control and collaboration using Git and GitHub</li>
+                    </ul>
+                    <ul>
+                        <li>UI design and prototyping using Figma</li>
+                        <li>Database design and data management</li>
+                        <li>Debugging, testing, and improving application performance</li>
+                        <li>Experience working in Agile and Scrum development environments</li>
+                        <li>Writing clean, maintainable, and scalable code</li>
+                        <li>Strong problem solving, adaptability, and attention to detail</li>
+                    </ul>
+                </div>
             </div>
 
              <div class="resume_container">
                 <h3>Job Experience</h3>
+
+                <p style="margin-bottom: 0px">January 2024 - PRESENT</p>
+                <h4>Holiday Inn Express and Suites, Eau Claire, WI - Front Desk Associate</h4>
+                <ul>
+                    <li>Manage guest check-ins, reservations, and phone inquiries with a focus on customer satisfaction.</li>
+                    <li>Resolve customer concerns and coordinate with housekeeping to meet guest needs.</li>
+                    <li>Maintain inventory and handle market transactions efficiently.</li>
+                    <li>Ensure a positive guest experience through effective communication and attention to detail.</li>
+                </ul>
+                <br>
+                <p style="margin-bottom: 0px">January 2023 - October 2023</p>
+                <h4>Animal Cottage, Hayward, WI- Front Desk/Receptionist and Kennel Assistant</h4>
+                <ul>
+                    <li>Scheduled appointments, managed records, and supported day-to-day facility operations.</li>
+                    <li>Assisted with animal care, feeding, and medication following individualized requirements.</li>
+                    <li>Maintained clean, safe environments to prevent disease transmission.</li>
+                    <li>Provided compassionate, attentive service to animals and clients.</li>
+                </ul>
             </div>
         </section>
 
-         <div id="border">Portfolio</div>
+        <div class="wrapper" style="margin-bottom: 0px;">
+            <div class="space"></div>
+            <div id="border"></div>
+        </div>
 
          <section class="project_section">
-            <div class="project_header">
-                <img src="images/logo.png" alt="the logo">
-                <h2 id="projects">Projects</h2>
+                <div class="project_header">
+                    <div class="logo" style="margin-bottom: 0px"><img src="images/logo.svg" alt="the logo"></div>
+                    <h2 id="projects" style="margin-top: 0px">Projects</h2>
             </div>
-            <div class="project_container">
-                <h3><strong>Preptastic -</strong> Meal Planning Website</h3>
-                <p>Preptastic is a full stack meal planning web application designed to help users organize and manage their meals efficiently. The platform allows users to create and post recipes, browse recipes from others, save favorites, schedule meals by date and time, and generate ingredient lists.</p>
-                <br>
-                <p>This project was built using HTML, CSS, JavaScript, and PHP. My main contributions focused on developing the recipe creation functionality, implementing the saved recipes feature, and building the recipe browsing page. I also contributed to the design and user experience of these sections to ensure they were both intuitive and visually appealing.</p>
+            <div class="project_background">
 
-                <div class="project_image">
-                    <img src="images/preptastic.png" alt="screenshot of the website project Preptastic">
+                <div class="project_container">
+                    <div class="info_split">
+                        <div class="text">
+                            <h3><strong>Preptastic -</strong> Meal Planning Website</h3>
+                            <p>Preptastic is a full stack meal planning web application designed to help users organize and manage their meals efficiently. The platform allows users to create and post recipes, browse recipes from others, save favorites, schedule meals by date and time, and generate ingredient lists.</p>
+                            <br>
+                            <p>This project was built using HTML, CSS, JavaScript, and PHP. My main contributions focused on developing the recipe creation functionality, implementing the saved recipes feature, and building the recipe browsing page. I also contributed to the design and user experience of these sections to ensure they were both intuitive and visually appealing.</p>
+                            <div class="button">Learn More</div>
+                        </div>
+                        <div class="project_image">
+                            <img src="images/preptastic.png" alt="screen shot of the website Full Service Flooring services offered page">
+                        </div>
+                    </div>
                 </div>
 
-                <div class="button">Learn More</div>
-            </div>
-
             <div class="project_container">
-                <h3><strong>Full Service Flooring LLC - </strong>Business Website</h3>
-                <p>This project involved designing and developing a website for a real client, Full Service Flooring, during my sophomore year. The goal was to create a professional and informative site that effectively communicates the company’s services and builds trust with potential customers.</p>
-                <br>
-                <p>I worked on key sections of the website including the Services, Testimonials, and FAQs pages. During this project, I also began working with JavaScript and PHP, which I used to develop a comment section feature. Although this feature was not included in the final deployed version, I created a separate Learn More section where users can view the code and instructions for running it locally.</p>
-                <br>
-                <p><strong>Website:</strong> <a href="fullserviceflooring.org">fullserviceflooring.org</a></p>
-                <div class="project_image">
-                    <img src="images/fsf.png" alt="screen shot of the website Full Service Flooring services offered page">
+                <div class="info_split">
+                    <div class="text">
+                        <h3><strong>Full Service Flooring LLC - </strong>Business Website</h3>
+                        <p>This project involved designing and developing a website for a real client, Full Service Flooring, during my sophomore year. The goal was to create a professional and informative site that effectively communicates the company’s services and builds trust with potential customers.</p>
+                        <br>
+                        <p>I worked on key sections of the website including the Services, Testimonials, and FAQs pages. During this project, I also began working with JavaScript and PHP, which I used to develop a comment section feature. Although this feature was not included in the final deployed version, I created a separate Learn More section where users can view the code and instructions for running it locally.</p>
+                        <br>
+                        <p><strong>Website:</strong> <a href="fullserviceflooring.org">fullserviceflooring.org</a></p>
+                        <div class="button">Learn More</div>
+                    </div>
+                    <div class="project_image">
+                        <img src="images/fsf.png" alt="screen shot of the website Full Service Flooring services offered page">
+                    </div>
                 </div>
-
-                <div class="button">Learn More</div>
             </div>
 
             <div class="project_container">
-                <h3><strong>Faculty and Student Information 
-                System - </strong>Computer Security Projecte</h3>
-                <p>This project was developed as part of a computer security course and focuses on role based access control within a web application. Built primarily using Node.js, the system simulates a dashboard that displays different functionality depending on the user’s access level.</p>
-                <br>
-                <p>There are two main roles in the system: student and faculty. Students can view and update their personal information, such as their address, while faculty members have extended permissions. Faculty users can modify student records including tuition and GPA, as well as create new student and faculty accounts.</p>
+                <div class="info_split">
+                    <div class="text">
+                        <h3><strong>Faculty and Student Information System -</strong> Computer Security Project</h3>
+                        <p>This project was developed as part of a computer security course and focuses on role based access control within a web application. Built primarily using Node.js, the system simulates a dashboard that displays different functionality depending on the user’s access level.</p>
+                        <br>
+                        <p>There are two main roles in the system: student and faculty. Students can view and update their personal information, such as their address, while faculty members have extended permissions. Faculty users can modify student records including tuition and GPA, as well as create new student and faculty accounts.</p>
+                        <div class="button">Learn More</div>
+                        
+                        
+                    </div>
+                    <div class="project_image">
+                        <img src="images/security_uwec.png" alt="screen shot of the website Full Service Flooring services offered page">
+                    </div>
+                </div>
+                
+            </div>
             
-                <div class="project_image">
-                    <img src="images/security_uwec.png" alt="screen shot of the student information system for a computer security project">
-                </div>
-                <div class="button">Learn More</div>
             </div>
          </section>
+
          
-         <div id="border">Portfolio</div>
+        <div class="wrapper">
+            <div class="space"></div>
+            <div id="border"></div>
+        </div>
          
          <section class="contact_section">
             <h2 id="contact">Contact Information</h2>
@@ -140,9 +195,11 @@
             </div>
          </section>
 
-         <footer>
-            <h2>Margaret Jean Johnson</h2>
-         </footer>
+        <div class="name_section">
+            <h2>Margaret</h2>
+            <h2>Jean</h2>
+            <h2>Johnson</h2>
+        </div>
     </main>
 </body>
 </html>
