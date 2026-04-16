@@ -12,7 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 
-    
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Portfolio" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
 
 </head>
 <body>
@@ -40,21 +45,31 @@
             <h2>Johnson</h2>
         </div>
 
-        <section class="about_section">
-            <h2 id="about_me">About Me</h2>
-            <img src="images/maggie.png" alt="a girl wearing blue headphones on a laptop">
-            <p>I am an aspiring full stack developer with a strong interest in web development and design. I enjoy building applications that are both functional and visually engaging, and I like working across both the front end and back end to bring ideas to life.</p>
-            <br>
-            <p>I am always looking to learn new technologies, improve my skills, and take on projects that challenge me to grow as a developer. I value creativity, problem solving, and building things that people can actually use and enjoy.</p>
+        <section id="about_me" class="about_section">
+            <h2>About Me</h2>
+            <img style="width:400px;"id="design" src="images/rect.svg" alt="image of a green rectangle">
+
+            <div class="about_content">
+                <img src="images/maggie.svg" alt="a girl wearing blue headphones on a laptop">
+
+                <div class="stack">
+                    <p>I am an aspiring full stack developer with a strong interest in web development and design. I enjoy building applications that are both functional and visually engaging.
+                    </p>
+
+                    <p> I am always looking to learn new technologies, improve my skills, and take on projects that challenge me to grow as a developer.
+                    </p>
+                </div>
+            </div>
         </section>
         
-        <div class="wrapper">
+        <div id="resume" class="wrapper">
             <div class="space"></div>
             <div id="border"></div>
         </div>
 
         <section class="resume_section">
-            <h2 id="resume">Resume</h2>
+            <h2 >Resume</h2>
+            <img style="width:350px;"id="design" src="images/long_rect.svg" alt="image of a green rectangle">
              
             <div class="resume_container">
                 <h3>Education</h3>
@@ -63,6 +78,7 @@
                 <br>
                 <p style="margin-bottom: 0px">Rice Lake WI, August 2024</p>
                 <p><strong>University of Wisconsin Eau Claire -</strong>Barron County - Associate of Arts and Science</p>
+                <img style="width:300px;"id="sketch" src="images/uwec.png" alt="drawn image of uwec logo">
             </div>
 
             <div class="resume_container">
@@ -84,6 +100,7 @@
                         <li>Strong problem solving, adaptability, and attention to detail</li>
                     </ul>
                 </div>
+                <img style="width:200px;"id="sketch_computer" src="images/computer.svg" alt="drawn image of uwec logo">
             </div>
 
              <div class="resume_container">
@@ -109,7 +126,7 @@
             </div>
         </section>
 
-        <div class="wrapper" style="margin-bottom: 0px;">
+        <div id="projects" class="wrapper" style="margin-bottom: 0px;">
             <div class="space"></div>
             <div id="border"></div>
         </div>
@@ -117,90 +134,141 @@
          <section class="project_section">
                 <div class="project_header">
                     <div class="logo" style="margin-bottom: 0px"><img src="images/logo.svg" alt="the logo"></div>
-                    <h2 id="projects" style="margin-top: 0px">Projects</h2>
+                    <h2 style="margin-top: 0px">Projects</h2>
             </div>
             <div class="project_background">
+                <div class="normal_view">
+                    <div class="project_container">
+                        <div class="flex_container">
+                            <div class="info_split">
+                                <div class="text">
+                                    <h3><strong>Preptastic -</strong> Meal Planning Website</h3>
+                                    <p>Preptastic is a full stack meal planning web application designed to help users organize and manage their meals efficiently. The platform allows users to create and post recipes, browse recipes from others, save favorites, schedule meals by date and time, and generate ingredient lists.</p>
+                                    <br>
+                                    <p>This project was built using HTML, CSS, JavaScript, and PHP. My main contributions focused on developing the recipe creation functionality, implementing the saved recipes feature, and building the recipe browsing page. I also contributed to the design and user experience of these sections to ensure they were both intuitive and visually appealing.</p>
+                                </div>
+                                <div class="project_image">
+                                    <img src="images/preptastic.png" alt="screen shot of the website Full Service Flooring services offered page">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button">Learn More</div>
+                    </div>
 
                 <div class="project_container">
                     <div class="flex_container">
                         <div class="info_split">
                             <div class="text">
-                                <h3><strong>Preptastic -</strong> Meal Planning Website</h3>
-                                <p>Preptastic is a full stack meal planning web application designed to help users organize and manage their meals efficiently. The platform allows users to create and post recipes, browse recipes from others, save favorites, schedule meals by date and time, and generate ingredient lists.</p>
+                                <h3><strong>Full Service Flooring LLC - </strong>Business Website</h3>
+                                <p>This project involved designing and developing a website for a real client, Full Service Flooring, during my sophomore year. The goal was to create a professional and informative site that effectively communicates the company’s services and builds trust with potential customers.</p>
                                 <br>
-                                <p>This project was built using HTML, CSS, JavaScript, and PHP. My main contributions focused on developing the recipe creation functionality, implementing the saved recipes feature, and building the recipe browsing page. I also contributed to the design and user experience of these sections to ensure they were both intuitive and visually appealing.</p>
+                                <p>I worked on key sections of the website including the Services, Testimonials, and FAQs pages. During this project, I also began working with JavaScript and PHP, which I used to develop a comment section feature. Although this feature was not included in the final deployed version, I created a separate Learn More section where users can view the code and instructions for running it locally.</p>
+                                <br>
+                                <p style="font-size: 1.5rem;"><strong>Website: <a href="https://fullserviceflooring.org/" target="_blank">fullserviceflooring.org</a></strong></p>
+                                
                             </div>
                             <div class="project_image">
-                                <img src="images/preptastic.png" alt="screen shot of the website Full Service Flooring services offered page">
+                                <img src="images/fsf.png" alt="screen shot of the website Full Service Flooring services offered page">
                             </div>
                         </div>
                     </div>
                     <div class="button">Learn More</div>
+                    
                 </div>
 
-            <div class="project_container">
-                <div class="flex_container">
-                    <div class="info_split">
-                        <div class="text">
-                            <h3><strong>Full Service Flooring LLC - </strong>Business Website</h3>
-                            <p>This project involved designing and developing a website for a real client, Full Service Flooring, during my sophomore year. The goal was to create a professional and informative site that effectively communicates the company’s services and builds trust with potential customers.</p>
-                            <br>
-                            <p>I worked on key sections of the website including the Services, Testimonials, and FAQs pages. During this project, I also began working with JavaScript and PHP, which I used to develop a comment section feature. Although this feature was not included in the final deployed version, I created a separate Learn More section where users can view the code and instructions for running it locally.</p>
-                            <br>
-                            <p><strong>Website:</strong> <a href="fullserviceflooring.org">fullserviceflooring.org</a></p>
-                            
+                <div class="project_container">
+                    <div class="flex_container">
+                        <div class="info_split">
+                            <div class="text">
+                                <h3><strong>Faculty and Student Information System -</strong> Computer Security Project</h3>
+                                <p>This project was developed as part of a computer security course and focuses on role based access control within a web application. Built primarily using Node.js, the system simulates a dashboard that displays different functionality depending on the user’s access level.</p>
+                                <br>
+                                <p>There are two main roles in the system: student and faculty. Students can view and update their personal information, such as their address, while faculty members have extended permissions. Faculty users can modify student records including tuition and GPA, as well as create new student and faculty accounts.</p>
+                            </div>
+                            <div class="project_image">
+                                <img src="images/security_uwec.png" alt="screen shot of the website Full Service Flooring services offered page">
+                            </div>
                         </div>
+                    </div>   
+                    <div class="button">Learn More</div>
+                </div>
+            </div>
+                <div class="second_view">
+                    <div class="project_container">
+                            
+                        <h3><strong>Preptastic -</strong> Meal Planning Website</h3>
+                        <p>Preptastic is a full stack meal planning web application designed to help users organize and manage their meals efficiently. The platform allows users to create and post recipes, browse recipes from others, save favorites, schedule meals by date and time, and generate ingredient lists.</p>
+                        <p>This project was built using HTML, CSS, JavaScript, and PHP. My main contributions focused on developing the recipe creation functionality, implementing the saved recipes feature, and building the recipe browsing page. I also contributed to the design and user experience of these sections to ensure they were both intuitive and visually appealing.</p>
+                                
+                        <div class="project_image">
+                            <img src="images/preptastic.png" alt="screen shot of the website Full Service Flooring services offered page">
+                        </div>
+                                
+                        <div class="button">Learn More</div>
+                        </div>
+
+                    <div class="project_container">
+                        <h3><strong>Full Service Flooring LLC - </strong>Business Website</h3>
+                        <p>This project involved designing and developing a website for a real client, Full Service Flooring, during my sophomore year. The goal was to create a professional and informative site that effectively communicates the company’s services and builds trust with potential customers.</p>
+                       
+                        <p>I worked on key sections of the website including the Services, Testimonials, and FAQs pages. During this project, I also began working with JavaScript and PHP, which I used to develop a comment section feature. Although this feature was not included in the final deployed version, I created a separate Learn More section where users can view the code and instructions for running it locally.</p>
+                        <br>
+                        <p style="font-size: 1.5rem;"><strong>Website: <a href="https://fullserviceflooring.org/" target="_blank">fullserviceflooring.org</a></strong></p>
+                                    
+
                         <div class="project_image">
                             <img src="images/fsf.png" alt="screen shot of the website Full Service Flooring services offered page">
                         </div>
+
+                        <div class="button">Learn More</div>
+                        
+                    </div>
+
+                    <div class="project_container">
+                        <h3><strong>Faculty and Student Information System -</strong> Computer Security Project</h3>
+                        <p>This project was developed as part of a computer security course and focuses on role based access control within a web application. Built primarily using Node.js, the system simulates a dashboard that displays different functionality depending on the user’s access level.</p>
+                    
+                        <p>There are two main roles in the system: student and faculty. Students can view and update their personal information, such as their address, while faculty members have extended permissions. Faculty users can modify student records including tuition and GPA, as well as create new student and faculty accounts.</p>
+                        <div class="project_image">
+                        <img src="images/security_uwec.png" alt="screen shot of the website Full Service Flooring services offered page">
+                        </div>
+
+                        <div class="button">Learn More</div>
                     </div>
                 </div>
-                <div class="button">Learn More</div>
-                
-            </div>
-
-            <div class="project_container">
-                <div class="flex_container">
-                    <div class="info_split">
-                        <div class="text">
-                            <h3><strong>Faculty and Student Information System -</strong> Computer Security Project</h3>
-                            <p>This project was developed as part of a computer security course and focuses on role based access control within a web application. Built primarily using Node.js, the system simulates a dashboard that displays different functionality depending on the user’s access level.</p>
-                            <br>
-                            <p>There are two main roles in the system: student and faculty. Students can view and update their personal information, such as their address, while faculty members have extended permissions. Faculty users can modify student records including tuition and GPA, as well as create new student and faculty accounts.</p>
-                        </div>
-                        <div class="project_image">
-                            <img src="images/security_uwec.png" alt="screen shot of the website Full Service Flooring services offered page">
-                        </div>
-                    </div>
-                 </div>   
-                  <div class="button">Learn More</div>
-            </div>
-            
             </div>
          </section>
 
          
-        <div class="wrapper">
+        <div id="contact" class="wrapper">
             <div class="space"></div>
             <div id="border"></div>
         </div>
          
          <section class="contact_section">
-            <h2 id="contact">Contact Information</h2>
-            <img src="images/star_logo.svg" alt="blue star">
-            <div class="contact_container">
-                <h3>Call</h3>
-                <img src="images/phone.svg">
-                <p>(000)000-000</p>
+            <div class="contact_header">
+                <h2 >Contact Information</h2>
+                <img src="images/star_logo.svg" alt="blue star">
             </div>
-            <div class="contact_container">
-                <h3>Email</h3>
-                <img src="images/email.svg">
-                <p>fake@gmail.com</p>
-            </div>
-         </section>
+            <div class="center">
+                <form class="contact_container" action="https://formspree.io/f/mgorazqe" method="POST">   
+                    <div>
+                        <label>Name</label>
+                        <input type="text" name="name" style="width: 40%;"required>
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="info_stack">
+                        <label >Message</label>
+                        <textarea name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                    </form>
+                </div>
 
-        <div class="name_section">
+        <div class="name_section" id="bottom">
             <h2>Margaret</h2>
             <h2>Jean</h2>
             <h2>Johnson</h2>
