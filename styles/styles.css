@@ -43,7 +43,7 @@ body{
     background-color: #FBFFF2;
 }
 
-#border {
+.border {
     position: absolute;
     top: 50%;
     left: 0;
@@ -156,7 +156,7 @@ h1 {
     position: relative;
 }
 
-.about_section #design {
+.about_section .rect_design {
     position: absolute;
     top: 190px;
     left: 25%;
@@ -207,7 +207,7 @@ h1 {
     position: relative;
 }
 
-.resume_section #design {
+.resume_section .rect_design {
     position: absolute;
     top: 150px;
     left: 10%;
@@ -646,7 +646,7 @@ h1 {
 }
 
 @media (max-width: 900px){
-.about_section #design {
+.about_section .rect_design {
 display: none;
 }
 
@@ -728,7 +728,7 @@ font-size: 4rem;
 }
     
 /***********sections******/
-.about_section #design {
+.about_section .rect_design {
 display: none;
 }
 
